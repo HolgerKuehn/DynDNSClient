@@ -62,6 +62,7 @@ namespace DynDNSClient
 
             this.settingsNetworkCredential = new SettingsNetworkCredential(settings);
 
+            WriteSettingsToFile();
         }
 
         #endregion
@@ -72,6 +73,32 @@ namespace DynDNSClient
         #endregion
         #region Methods
 
+        /// <summary>
+        /// writes Settings.xml to disc
+        /// </summary>
+        private void WriteSettingsToFile()
+        {
+            XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.OmitXmlDeclaration = true;
+            xmlWriterSettings.NewLineOnAttributes = true;
+
+            using (XmlWriter xmlWriter = XmlWriter.Create("Settings\\Data\\Export.xml", xmlWriterSettings))
+            {
+                xmlWriter.WriteStartDocument();
+                xmlWriter.WriteStartElement("DynDNSClient");
+                xmlWriter.WriteStartElement("Settings");
+
+                xmlWriter.WriteStartElement("Username");
+                xmlWriter.WriteElementString("IsEncrypted", "aaaaa");
+                xmlWriter.WriteElementString("Value", "bbbbbb");
+                xmlWriter.WriteEndElement(); // Username
+
+                xmlWriter.WriteEndElement(); // Settings
+                xmlWriter.WriteEndElement(); // DynDNSClient
+                xmlWriter.WriteEndDocument();
+            }
+        }
         #endregion
     }
 }
