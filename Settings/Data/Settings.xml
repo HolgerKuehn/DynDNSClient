@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DynDNSClient>
+  <Settings>
+    <Username>
+      <IsEncrypted>false</IsEncrypted>
+      <Value></Value>
+    </Username>
+    <Password>
+      <IsEncrypted>false</IsEncrypted>
+      <Value></Value>
+    </Password>
+    <DnsEntry>
+      <Value></Value>
+    </DnsEntry>
+  </Settings>
+</DynDNSClient>

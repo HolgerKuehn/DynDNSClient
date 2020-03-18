@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28721.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code", "Code\Code.csproj", "{40009109-0CED-4EEC-A3A2-408F6BE6F171}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynDNSClient", "DynDNSClient", "{ABF0C4E7-E06C-4DDD-A5BC-E3392489019E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{260EE39B-5C42-4730-82A2-09F863317F24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{E462DDD5-54EF-47BE-8549-C5C4D39015DE}"
+	ProjectSection(SolutionItems) = preProject
+		Settings\Data\Settings.xml = Settings\Data\Settings.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Schema", "Schema", "{789CD0E6-C387-41C1-A5B4-0EF4F5010976}"
+	ProjectSection(SolutionItems) = preProject
+		Settings\Schema\Settings.xsd = Settings\Schema\Settings.xsd
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40009109-0CED-4EEC-A3A2-408F6BE6F171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40009109-0CED-4EEC-A3A2-408F6BE6F171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40009109-0CED-4EEC-A3A2-408F6BE6F171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40009109-0CED-4EEC-A3A2-408F6BE6F171}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40009109-0CED-4EEC-A3A2-408F6BE6F171} = {ABF0C4E7-E06C-4DDD-A5BC-E3392489019E}
+		{260EE39B-5C42-4730-82A2-09F863317F24} = {ABF0C4E7-E06C-4DDD-A5BC-E3392489019E}
+		{E462DDD5-54EF-47BE-8549-C5C4D39015DE} = {260EE39B-5C42-4730-82A2-09F863317F24}
+		{789CD0E6-C387-41C1-A5B4-0EF4F5010976} = {260EE39B-5C42-4730-82A2-09F863317F24}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {148C206D-F904-47A6-AFA6-F6E3394A608E}
+	EndGlobalSection
+EndGlobal
